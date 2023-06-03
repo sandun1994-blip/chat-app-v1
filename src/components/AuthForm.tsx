@@ -73,13 +73,15 @@ if (variant==='LOGIN') {
  register={register} 
  type="email"
  id="email"
-  errors={errors}/>
+  errors={errors}
+  disabled={isLoading}/>
 
 <Input label="Password"
  register={register} 
  id="password"
  type="password"
-  errors={errors}/>
+  errors={errors}
+  disabled={isLoading}/>
 
 <div>
   <Button
