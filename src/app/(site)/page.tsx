@@ -23,7 +23,7 @@ export default function Home() {
                 font-bold 
                 tracking-tight
                 text-gray-900'>
-                    Sign in to ypur account
+                    Sign in to your account
                 </h2>
 <AuthForm/>
 

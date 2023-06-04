@@ -10,7 +10,7 @@ import bcrypt from 'bcrypt'
 
 export const authOptions:AuthOptions={
 
-    adapter:PrismaAdapter(prisma),
+    // adapter:PrismaAdapter(prisma),
     providers:[
         GithubProvider({
             clientId:process.env.GITHUB_ID as string,
