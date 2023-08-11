@@ -17,11 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className} suppressHydrationWarning={true} >
-        <AuthContext>
-        <ToasterContext/>
-        {children}
-        </AuthContext>
+      <body className={inter.className}  >
+       <AuthContext>
+          <ToasterContext/> 
+           {children} 
+           </AuthContext>
         </body>
     </html>
   )

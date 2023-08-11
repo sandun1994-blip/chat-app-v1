@@ -22,7 +22,8 @@ const handleClick =()=>{
 
   return (
     <li onClick={handleClick}>
-        <Link href={href} className={clsx(`group
+        <Link href={href} className={clsx(`
+        group
         flex
         gap-x-3
         rounded-md
