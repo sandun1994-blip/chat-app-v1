@@ -11,6 +11,7 @@ import clsx from "clsx";
 // import AvatarGroup from "@/app/components/AvatarGroup";
 import { FullConversationType } from "@/app/types";
 import useOtherUser from "@/app/hooks/useOtherUser";
+import Avatar from "@/components/Avatar";
 
 interface ConversationBoxProps {
   data: FullConversationType,
@@ -83,6 +84,7 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
         selected ? 'bg-neutral-100' : 'bg-white'
       )}
     >
+         <Avatar user={otherUser} />
       {/* {data.isGroup ? (
         <AvatarGroup users={data.users} />
       ) : (
@@ -93,9 +95,9 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
           <span className="absolute inset-0" aria-hidden="true" />
           <div className="flex justify-between items-center mb-1">
             <p className="text-md font-medium text-gray-900">
-              {/* {data.name || otherUser.name} */}
+              {data.name || otherUser.name}
             </p>
-            {/* {lastMessage?.createdAt && (
+            {lastMessage?.createdeAt && (
               <p 
                 className="
                   text-xs 
@@ -103,9 +105,9 @@ const ConversationBox: React.FC<ConversationBoxProps> = ({
                   font-light
                 "
               >
-                {format(new Date(lastMessage.createdAt), 'p')}
+                {format(new Date(lastMessage.createdeAt), 'p')}
               </p>
-            )} */}
+            )}
           </div>
           <p 
             className={clsx(`
